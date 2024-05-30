@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "services:up": "docker compose up -d",
+    "db:migrate": "prisma migrate dev",
+    "db:reset": "prisma migrate reset",
+    "db:seed": "prisma db seed",
+    "db:reset:force": "prisma migrate reset --force",
+    "db:generate": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^5.14.0",
